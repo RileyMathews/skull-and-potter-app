@@ -8,26 +8,62 @@ const buildOrderForm = (id) => {
     $orderForm.append(
         `
         <section>
-            <h2>Name</h2>
-            <input type="text" id="customer__name" placeholder="name"></input>
-            <h3>Address</h3>
-            <input type="address" id="customer__address" placeholder="address"></input>
-            <h3>Phone Number</h3>
-            <input type="number" id="customer__number" placeholder="phone number"></input>
-            <h3>Email</h3>
-            <input type="email" id="customer__email" placeholder="email"></input>
-
-            <h2>Payment</h2>
-            <select id="customer__payment" placeholder="payment">
-                <option value="visa">visa</option>
-                <option value="paypal">paypal</option>
-                <option value="bitcoin">bitcoin</option>
-                <option value="perrycoin">perrycoin</option>
-            </select>
-            
-            <h3>Quantity</h3>
-            <input type="number id="customer__qantity" placeholder="quantity"></input>
-
+            <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputNumber">Phone Number</label>
+                    <input type="number" class="form-control" id="inputNumber" placeholder="Number">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputQuantity">Quantity</label>
+                    <input type="number" class="form-control" id="inputQuantity">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPayment">Payment</label>
+                    <select id="inputPayment" class="form-control">
+                    <option selected>Chose...</option>
+                    <option value="visa">Visa</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bitcoin">Bitcoin</option>
+                    <option value="perrycoin">Perry Coin</option>
+                    </select>
+                </div>
+            </div>
         </section>
         `
     )
@@ -42,9 +78,11 @@ const buildOrderForm = (id) => {
         .then(response => {
             $orderForm.append(
                 `
-                <p>Your selection: ${response.species}</p>
-                <p>Price: ${response.price}</p>
-                <button id="order__submit">submit order</button>
+                <section class="jumbotron">
+                    <p>Your selection: ${response.species}</p>
+                    <p>Price: ${response.price}</p>
+                    <button class="btn btn-primary" id="order__submit">submit order</button>
+                </section>
                 `
             )
             // submit button
