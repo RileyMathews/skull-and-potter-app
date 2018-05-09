@@ -12,25 +12,25 @@ const animalList = () => {
         .then(allAnimals => {
             let index = 0
             let currentRow = 1
-            let row = $(`<div class="row" id="catalog__row__${currentRow}"></div>`)
+            let row = $("<div class=\"card-columns\"></div>")
             output.append(row)
             // iterate over animal list
             allAnimals.forEach(animal => {
                 //create row div for every 3 cards
 
 
-                if (index % 3 === 0) {
-                    currentRow = index/3+1
-                    let row = $(`<div class="row" id="catalog__row__${currentRow}"></div>`)
-                    output.append(row)
-                }
+                // if (index % 3 === 0) {
+                //     currentRow = index/3+1
+                //     let row = $(`<div class="row" id="catalog__row__${currentRow}"></div>`)
+                //     output.append(row)
+                // }
                 //append cards to row div
 
                 // build html representation for each one
                 // ensure purchase button is on representation
-                $(`#catalog__row__${currentRow}`).append(
+                $(".card-columns").append(
                     `
-                    <div class="card catalogItem col-md-4" style="width: 18rem;" id="${animal.id}">
+                    <div class="card catalogItem" style="width: 18rem;" id="${animal.id}">
                         <img class="card-img-top" src="${animal.img}" alt="Card image cap">
                         <div class="card-body">
                             <h5 class="card-title">${animal.species}</h5>
