@@ -94,7 +94,9 @@ const buildCommissionForm = () => {
         </section>
         `
     )
-
+    $("#comission__btn__submit").on("click", () => {
+        console.log("comission submitted")
+    })
 
 }
 
