@@ -40,22 +40,22 @@ const buildAddAminalPage = () => {
                 </div>
             </div>
             <!-- checkbox component -->
-            <div class="form-row">
-                <div class="form-group col-md-3">
-                    <label for="addAnimal__input__furred">Furred</label>
-                    <input type="checkbox" class="form-control" id="addAnimal__input__furred">
+            <div class="form-row pl-4">
+                <div class="form-group col-md-2">
+                    <input type="checkbox" class="form-check-input" id="addAnimal__input__furred">
+                    <label class="form-check-label" for="addAnimal__input__furred">Furred</label>
                 </div>
-                <div class="form-group col-md-3">
-                    <label for="addAnimal__input__feathered">feathered</label>
-                    <input type="checkbox" class="form-control" id="addAnimal__input__feathered">
+                <div class="form-group col-md-2">
+                    <input type="checkbox" class="form-check-input" id="addAnimal__input__feathered">
+                    <label class="form-check-label" for="addAnimal__input__feathered">feathered</label>
                 </div>
-                <div class="form-group col-md-3">
-                    <label for="addAnimal__input__scales">scales</label>
-                    <input type="checkbox" class="form-control" id="addAnimal__input__scales">
+                <div class="form-group col-md-2">
+                    <input type="checkbox" class="form-check-input" id="addAnimal__input__scales">
+                    <label class="form-check-label" for="addAnimal__input__scales">scales</label>
                 </div>
-                <div class="form-group col-md-3">
-                    <label for="addAnimal__input__mounted">mounted</label>
-                    <input type="checkbox" class="form-control" id="addAnimal__input__mounted">
+                <div class="form-group col-md-2">
+                    <input type="checkbox" class="form-check-input" id="addAnimal__input__mounted">
+                    <label class="form-check-label" for="addAnimal__input__mounted">mounted</label>
                 </div>
             </div>
             <div class="form-row">
