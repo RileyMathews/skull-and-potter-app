@@ -19,6 +19,9 @@ const buildNavBar = () => {
                     <li class="nav-item" id="nav__comission">
                         <a class="nav-link">Comission</a>
                     </li>
+                    <li class="nav-item" id="nav__addAnimal">
+                        <a class="nav-link">Add a new animal</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -32,6 +35,10 @@ const buildNavBar = () => {
     $("#nav__comission").click(() => {
         $("#main-output").empty()
         showComissionForm()
+    })
+
+    $("#nav__addAnimal").click(() => {
+        $("#main-output").empty()
     })
 
 }
