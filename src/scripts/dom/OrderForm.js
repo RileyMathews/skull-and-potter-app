@@ -1,6 +1,7 @@
 // purpose: build the Order form
 const $ = require("jquery")
 const APIManager = require("../api/APIManager")
+const listAnimals = require("./DisplayCatalog")
 
 const buildOrderForm = (id) => {
     // customer info (name, address, phone number, email)
@@ -91,12 +92,11 @@ const buildOrderForm = (id) => {
             )
             // submit button
             $("#order__btn__submit").on("click", () => {
-                console.log("order Submitted")
+                $("#main-output").empty()
+                const showCatalog = require("./DisplayCatalog")
+                showCatalog()
             })
         })
-
-
-
 }
 
 module.exports = buildOrderForm

@@ -11,8 +11,8 @@ const buildComissionForm = require("./dom/CommissionWork")
 
 
 //Display a list of all animals
-//listAnimals()
+listAnimals()
 
 //display order form
 // buildOrderForm(1)
-buildComissionForm()
+// buildComissionForm()
