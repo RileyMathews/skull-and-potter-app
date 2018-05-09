@@ -13,6 +13,7 @@ const APIManager = Object.create(null, {
     },
     createAnimal: {
         value: function (animal) {
+            console.log(animal)
             return $.ajax({
                 url: "http://localhost:8088/animals",
                 method: "POST",

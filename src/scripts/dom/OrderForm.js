@@ -81,6 +81,7 @@ const buildOrderForm = (id) => {
     // what customer selected
     APIManager.getSingleAnimal(id)
         .then(response => {
+            console.log(response)
             $orderForm.append(
                 `
                 <section class="jumbotron">

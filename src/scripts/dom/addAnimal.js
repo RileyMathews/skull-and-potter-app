@@ -1,6 +1,7 @@
 //function to create a form for adding an animal to the api
 const APIManager = require("../api/APIManager")
 const $ = require("jquery")
+const addAnimal = require("../api/createAnimalObject")
 
 const buildAddAminalPage = () => {
     $("#main-output").append(
@@ -40,17 +41,21 @@ const buildAddAminalPage = () => {
             </div>
             <!-- checkbox component -->
             <div class="form-row">
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                     <label for="addAnimal__input__furred">Furred</label>
                     <input type="checkbox" class="form-control" id="addAnimal__input__furred">
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                     <label for="addAnimal__input__feathered">feathered</label>
                     <input type="checkbox" class="form-control" id="addAnimal__input__feathered">
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-md-3">
                     <label for="addAnimal__input__scales">scales</label>
                     <input type="checkbox" class="form-control" id="addAnimal__input__scales">
+                </div>
+                <div class="form-group col-md-3">
+                    <label for="addAnimal__input__mounted">mounted</label>
+                    <input type="checkbox" class="form-control" id="addAnimal__input__mounted">
                 </div>
             </div>
             <div class="form-row">
@@ -75,7 +80,18 @@ const buildAddAminalPage = () => {
         `
     )
     $("#addAnimal__btn__submit").click(() => {
-        //call function to add animal to api
+        const species = $("#addAnimal__input__species").val()
+        const color = $("#addAnimal__input__color").val()
+        const size = $("#addAnimal__input__size").val()
+        const furred = $("#addAnimal__input__furred").is(":checked")
+        console.log(furred)
+        const feathered = $("#addAnimal__input__feathered").is(":checked")
+        const scales = $("#addAnimal__input__scales").is(":checked")
+        const price = $("#addAnimal__input__price").val()
+        const quantity = $("#addAnimal__input__quantity").val()
+        const image = $("#addAnimal__input__image").val()
+        const mounted = $("#addAnimal__input__mounted").is(":checked")
+        APIManager.createAnimal(addAnimal(species, color, size, furred, feathered, scales, price, quantity, image, mounted))
     })
 }
 

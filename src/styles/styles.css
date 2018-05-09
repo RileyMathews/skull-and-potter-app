@@ -41,6 +41,9 @@ Variables
 #nav {
   margin-bottom: .5em; }
 
+.catalogItem {
+  display: inline-block; }
+
 /*
 
 ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄  
