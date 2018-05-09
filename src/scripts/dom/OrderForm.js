@@ -8,6 +8,7 @@ const buildOrderForm = (id) => {
     $orderForm.append(
         `
         <section>
+            <h1>Order</h1>
             <div class="form-row">
                 <!-- customer info component -->
                 <div class="form-group col-md-4">
