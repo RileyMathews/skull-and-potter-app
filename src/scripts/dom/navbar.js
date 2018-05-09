@@ -2,6 +2,7 @@
 const $ = require("jquery")
 const showCatalog = require("./DisplayCatalog")
 const showComissionForm = require("./CommissionWork")
+const showAddAnimal = require("./addAnimal")
 
 const buildNavBar = () => {
     $("#nav-output").append(
@@ -39,6 +40,7 @@ const buildNavBar = () => {
 
     $("#nav__addAnimal").click(() => {
         $("#main-output").empty()
+        showAddAnimal()
     })
 
 }
