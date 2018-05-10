@@ -45,10 +45,12 @@ Variables
   display: inline-block; }
 
 .catalogItem:nth-child(even) {
-  background-color: lightgrey; }
+  background-color: #a1a0a0; }
+  .catalogItem:nth-child(even) .standout {
+    background-color: #505c50; }
 
 .catalogItem:nth-child(odd) {
-  background-color: #dddd6d; }
+  background-color: #505c50; }
 
 .navbar-nav {
   border-radius: 4px 4px 0px 0px;
@@ -56,7 +58,12 @@ Variables
   transition-property: background-color; }
 
 .navbar-nav:hover {
-  background-color: #4d884d; }
+  background-color: #505c50; }
+
+.standout {
+  padding: 1em;
+  background-color: #a1a0a0;
+  border-radius: 4px; }
 
 /*
 

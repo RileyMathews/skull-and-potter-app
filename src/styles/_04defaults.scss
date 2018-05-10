@@ -26,11 +26,16 @@
 }
 
 .catalogItem:nth-child(even) {
-    background-color: lightgrey;
+    background-color: $primary-color;
+    .standout {
+        background-color: $secondary-color;
+    }
 }
 
+
+
 .catalogItem:nth-child(odd) {
-    background-color: rgb(221, 221, 109);
+    background-color: $secondary-color;
 }
 
 .navbar-nav {
@@ -40,8 +45,15 @@
 }
 
 .navbar-nav:hover {
-    background-color: rgb(77, 136, 77);
+    background-color: $secondary-color;
 }
+
+.standout {
+    padding: 1em;
+    background-color: $primary-color;
+    border-radius: 4px;
+}
+
 
 // .card + .card {
 //     margin-left: 1px;
