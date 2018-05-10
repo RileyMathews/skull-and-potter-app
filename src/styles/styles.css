@@ -44,6 +44,20 @@ Variables
 .catalogItem {
   display: inline-block; }
 
+.catalogItem:nth-child(even) {
+  background-color: lightgrey; }
+
+.catalogItem:nth-child(odd) {
+  background-color: #dddd6d; }
+
+.navbar-nav {
+  border-radius: 4px 4px 0px 0px;
+  transition-duration: .1s;
+  transition-property: background-color; }
+
+.navbar-nav:hover {
+  background-color: #4d884d; }
+
 /*
 
 ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄▄  ▄▄▄▄▄▄▄▄▄▄  

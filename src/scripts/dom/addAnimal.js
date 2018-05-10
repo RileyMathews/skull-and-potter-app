@@ -2,6 +2,7 @@
 const APIManager = require("../api/APIManager")
 const $ = require("jquery")
 const addAnimal = require("../api/createAnimalObject")
+const buildCatalog = require("./DisplayCatalog")
 
 const buildAddAminalPage = () => {
     $("#main-output").append(
@@ -92,6 +93,8 @@ const buildAddAminalPage = () => {
         const image = $("#addAnimal__input__image").val()
         const mounted = $("#addAnimal__input__mounted").is(":checked")
         APIManager.createAnimal(addAnimal(species, color, size, furred, feathered, scales, price, quantity, image, mounted))
+        $("#main-output").empty()
+        buildCatalog()
     })
 }
 

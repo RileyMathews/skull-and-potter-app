@@ -25,6 +25,24 @@
     display: inline-block;
 }
 
+.catalogItem:nth-child(even) {
+    background-color: lightgrey;
+}
+
+.catalogItem:nth-child(odd) {
+    background-color: rgb(221, 221, 109);
+}
+
+.navbar-nav {
+    border-radius: 4px 4px 0px 0px;
+    transition-duration: .1s;
+    transition-property: background-color;
+}
+
+.navbar-nav:hover {
+    background-color: rgb(77, 136, 77);
+}
+
 // .card + .card {
 //     margin-left: 1px;
 // }

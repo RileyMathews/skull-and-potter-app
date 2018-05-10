@@ -13,15 +13,15 @@ const buildNavBar = () => {
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active" id="nav__catalog">
-                        <a class="nav-link">catalog</a>
+                <ul class="navbar-nav nav-tabs">
+                    <li class="nav-item" id="nav__catalog">
+                        <a href="#" class="nav-link">catalog</a>
                     </li>
                     <li class="nav-item" id="nav__comission">
-                        <a class="nav-link">Comission</a>
+                        <a href="#" class="nav-link">Comission</a>
                     </li>
                     <li class="nav-item" id="nav__addAnimal">
-                        <a class="nav-link">Add a new animal</a>
+                        <a href="#" class="nav-link">Add a new animal</a>
                     </li>
                 </ul>
             </div>
@@ -42,7 +42,6 @@ const buildNavBar = () => {
         $("#main-output").empty()
         showAddAnimal()
     })
-
 }
 
 

@@ -39,7 +39,7 @@ const animalList = () => {
                         <div class="card-body">
                             <h5 class="card-title">${animal.species}</h5>
                             <p class="card-text">A lovely ${animal.size} ${animal.color} creature. We have ${animal.quantity} in stock.</p>
-                            <small class="card-text text-muted">Price: $${animal.price}</small>
+                            <p class="card-text text-muted">Price: $${animal.price}</p>
                             <button class="btn btn-primary">Order</a>
                         </div>
                     </div>
