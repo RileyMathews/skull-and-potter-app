@@ -9,6 +9,7 @@ modules.
 
 
 //import required modules
+require("bootstrap")
 const listAnimals = require("./dom/DisplayCatalog")
 const buildOrderForm = require("./dom/OrderForm")
 const buildComissionForm = require("./dom/CommissionWork")

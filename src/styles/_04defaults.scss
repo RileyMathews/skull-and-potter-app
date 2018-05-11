@@ -26,16 +26,16 @@
 }
 
 .catalogItem:nth-child(even) {
-    background-color: $primary-color;
+    background-color: $primary;
     .standout {
-        background-color: $secondary-color;
+        background-color: $secondary;
     }
 }
 
 
 
 .catalogItem:nth-child(odd) {
-    background-color: $secondary-color;
+    background-color: $secondary;
 }
 
 .navbar-nav {
@@ -45,14 +45,15 @@
 }
 
 .navbar-nav:hover {
-    background-color: $secondary-color;
+    background-color: $primary;
 }
 
 .standout {
     padding: 1em;
-    background-color: $primary-color;
+    background-color: $primary;
     border-radius: 4px;
 }
+
 
 
 // .card + .card {

@@ -41,7 +41,7 @@ const animalList = () => {
                             <p class="card-text">A lovely ${animal.size} ${animal.color} creature. We have ${animal.quantity} in stock.</p>
                             <div class="standout">
                                 <p class="card-text">Price: $${animal.price}</p>
-                                <button class="btn btn-primary">Order</a>
+                                <button class="btn btn-info">Order</a>
                             </div>    
                         </div>
                     </div>
